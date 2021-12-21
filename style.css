@@ -1,0 +1,274 @@
+body {
+    color: #212529;
+    font-family:'Fira Mono', monospace;
+    font-size: 12px
+}
+.container {
+    padding: 2% 10%;
+    width: 80%;
+}
+:root {
+    color: black;
+    --dark-grey: #212529;
+    --footer-grey:#343a40;
+    --gold: #f5ba4b;
+    --selection:#f8f9fa;
+}
+h2, h3, h4 {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+.btn {
+    border: var(--gold) 1px solid;
+    margin: 10% 0;
+    padding: 15px 15px;
+    text-align: center;  
+    width: 200px;
+}
+.fontawesome {
+    color: var(--gold);
+    font-size: 8px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+
+
+/* ---HEADER--- */
+header {
+    height: 5%;
+}
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+header img {
+    margin: 0 0;
+    padding: 0 0;
+    width: 10%;
+}
+.social a {
+    color: var(--dark-grey);
+    justify-content: left;
+    font-size: 10px;
+    padding: 0 0.5rem;
+    width: 10%;
+    display: inline-block;
+}
+.meniu a {
+    align-items: flex-end;
+    color: var(--dark-grey);
+    font-size: 16px;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.social a:first-child, .meniu a:nth-last-child(2) {
+    border-left: grey 2px solid;
+    padding-left: 20px;
+}
+.meniu a:last-child {
+    visibility: hidden;
+}
+
+
+
+/* ---FIRST SECTION WITH IMG--- */
+.section-first-bg {
+    background: url(/css/bg.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.section-first-info {
+    color: white;
+    max-width: 60%;
+    text-align: left;
+}
+.section-first-p1 {
+    padding-top: 30%;
+}
+.section-first-h1 {
+    padding-top: 20px;
+    text-align: left;
+}
+.section-first-p2 {
+    padding-top: 20px;
+}
+.white-section-btn {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* ---WITHE SECTION--- */
+.white-grid {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    text-align: center;
+}
+.fontawesome-white {
+    font-size: 20px;
+}
+
+
+
+/* ---GREY-SECTION--- */
+.grey-selection {
+    background-color: var(--selection);
+}
+.grid-selection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
+}
+.grid-iteam1 {
+    grid-column: 1 / 3;
+}
+.grid-iteam2 {
+    border-left: var(--gold) solid 1px;
+    font-size: 10px;
+    grid-column: 3 / 4;
+    margin-left: 40px;
+    padding: 40px 5px 40px 10px;
+    text-align: left;
+}
+span {
+    color: var(--gold)
+}
+.grey-h2 {
+    padding: 40px, 0;
+    text-align: left;
+}
+.grey-p {
+    padding: 40px, 0;
+    text-align: left;
+}
+.grey-img {
+    border-color: var(--footer-grey);
+    border-radius: 50px;
+    height: auto;
+    width: 10%;
+}
+.grey-comentator {
+    display: inline-flex;
+    grid-template-columns: auto auto;
+    text-align: left;
+}
+.grey-section-btn {
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+
+
+/* ---INSIDE THE HOUSE--- */
+.simple-gallery--preview img{
+    height: auto;
+    width: 100%;
+}
+.simple-gallery--thumbs img{
+    width: 24%;
+}
+.simple-gallery--thumbs>div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+} 
+
+
+
+/* ---MAP--- */
+.map {
+    padding: 20px 0;
+    text-align: center;
+}
+h2, p {
+    text-align: center;
+}
+
+
+
+/* ---FOOTER--- */
+footer {
+    background-color: var(--footer-grey);
+    height: 15%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+footer img {
+    padding: 5px 5px;
+    width: 10%;
+}
+footer div a {
+    color: white;
+    font-size: 12px;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+footer p {
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    padding: 5px 5px;
+    text-align: left;
+}
+.footer-social-split {
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .section-first-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social, .meniu {
+        visibility: hidden;
+    }
+    .meniu a:last-child {
+        visibility: visible;
+        text-align: center;
+    
+    }
+    .white-grid {
+        display: block;
+        text-align: center;
+    }
+    .grid-selection {
+        display: block;
+        padding: 0;
+    }
+    .grid-iteam2 {
+
+        margin-left: 0px;
+
+    }
+    .simple-gallery--thumbs img{
+        width: 23%;
+    }
+    .grid-container {
+        display: block;
+    }
+    .footer-social-split {
+        text-align: left;
+    }
+
+}
